@@ -1,11 +1,11 @@
-
-
 :root {
     --primary-color: #632ade;
     --secondary-color: #f1ebfc;
-    --non-hover-color: #7b2ade;
+    --bg-color: #fbfaff;
+    --header-color: #ffffff;
+    --header-hover-color: #e4d6ff;
     --hover-color: #370d73;
-    --bg-color: #fbfaff; 
+    --non-hover-color: #7b2ade;
 }
 
 * {
@@ -13,4 +13,139 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 300vh;
+    background-color: var(--bg-color);
+}
+
+a {
+    color: var(--non-hover-color);
+    text-decoration: none;
+}
+
+header {
+    height: 83px;
+    background-color: var(--header-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.nav-sección {
+    height: 100%; 
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+}
+
+.header__izquierda {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-right: auto; 
+}
+
+.header__derecha {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.n__logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.nav__izquierda__a {
+    background: none;
+    border: none;
+    margin: 0px 4px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a1a;
+    cursor: pointer;
+    padding: 6px 12px; 
+    display: inline-block;
+}
+
+.separador {
+    display: inline-block;
+    height: 24px;
+    border-right: 1px solid #cccccc; 
+    margin-left: -8px; 
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 220px;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown-menu a {
+    color: #2b2b2b;
+    font-size: 14px;
+    padding: 6px 0;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    color: var(--primary-color);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Espacio-Nave, .Entrar-a-Nave {
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 999px;
+    padding: 10px 24px;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.Espacio-Nave {
+    background-color: var(--header-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.Espacio-Nave:hover {
+    background-color: var(--header-hover-color);
+    color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+.Entrar-a-Nave {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+}
+
+.Entrar-a-Nave:hover {
+    background-color: var(--header-hover-color);
+    color: var(--hover-color);
+    border-color: var(--hover-color);
 }

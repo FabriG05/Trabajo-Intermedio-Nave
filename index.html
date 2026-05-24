@@ -10,36 +10,37 @@
 
 <body>
     <header>
-        <div>
-            <nav>
+            <nav class="nav-sección">
                 <div class="header__izquierda">
-                    <div class="header__logo">
-                        <img src="" alt="Logo Nave*">
+                    <div class="n__logo">
+                        <img src="./assets/Images/Logo Nave.jpg" alt="Logo Nave*">
                         <a href="#"></a>
                     </div>
-                    <ol>
-                        <a href="#">QR</a>
-                        <a href="#">Nave Point</a>
-                        <a href="#">Cobros online</a>
-                        <a href="#">Link de pago</a>
-                        <a href="#">Centro de recaudación</a>
-                        <a href="#">Integraciones</a>
-                    </ol>
-                    <ol>
-                        <a href="#">Promociones</a>
-                        <a href="#">Plan simple</a>
-                    </ol>
+                    <div class="dropdown">
+                        <a href="#" class="nav__izquierda__a">Cobros</a>
+                        <div class="dropdown-menu">
+                            <a href="#">QR</a>
+                            <a href="#">Nave Point</a>
+                            <a href="#">Cobros online</a>
+                            <a href="#">Link de pago</a>
+                            <a href="#">Centro de recaudación</a>
+                            <a href="#">Integraciones</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="nav__izquierda__a">Beneficios</a>
+                        <div class="dropdown-menu">
+                            <a href="#">Promociones</a>
+                            <a href="#">Plan simple</a>
+                        </div>
+                    </div>
+                    <span class="separador"></span>
                 </div>
                 <div class="header__derecha">
-                    <button>
-                        <a href="#">Espacio Nave</a>
-                    </button>
-                    <button>
-                        <a href="#">Entrar a Nave</a>
-                    </button>
+                    <a href="#" class="Espacio-Nave">Espacio Nave</a>
+                    <a href="#" class="Entrar-a-Nave">Entrar a Nave</a>
                 </div>
             </nav>
-        </div>
     </header>
     <main>
         <section class="bienvenida"></section>
