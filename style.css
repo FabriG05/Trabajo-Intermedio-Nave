@@ -3,7 +3,8 @@
 :root {
     --primary-color: #632ade;
     --secondary-color: #f1ebfc;
-    --text-color: (#2b2b2b);
+    --text-color: #2b2b2b;
+    --muted-text-color: #6a6a7d;
     --bg-color: #fbfaff;
     --header-color: #ffffff;
     --header-hover-color: #e4d6ff;
@@ -67,7 +68,7 @@ a {
 }
 
 .nav__izquierda__a {
-    margin: 0px 4px;
+    margin: 0 4px;
     font-size: 15px;
     font-weight: 700;
     color: #1a1a1a;
@@ -155,8 +156,6 @@ a {
 }
 
 .bienvenida__contenido {
-    display: flex;
-    justify-content: center;
     position: relative;
     margin-top: 40px;
     overflow: hidden;
@@ -266,7 +265,7 @@ a {
 }
 
 .tarjetas__título {
-    color: rgb(43, 43, 43);
+    color: var(--text-color);
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
@@ -274,7 +273,7 @@ a {
 }
 
 .tarjetas__p {
-    color: #6a6a7d;
+    color: var(--muted-text-color);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -282,8 +281,8 @@ a {
 }
 
 .tarjetas:hover {
-    transform: translateY(-4px);
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.055);
+    transform: translateY(-4px);
 }
 
 .tarjetas:hover .tarjetas__ícono {
