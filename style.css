@@ -116,8 +116,7 @@ header {
     gap: 12px;
 }
 
-.Espacio-Nave,
-.Entrar-a-Nave {
+.Espacio-Nave, .Entrar-a-Nave {
     font-size: 14px;
     font-weight: 700;
     border-radius: 999px;
@@ -330,10 +329,121 @@ header {
     font-size: 15px;
     transition: background-color 0.3s ease;
     position: absolute;
-    top: 30%;
+    top: 35%;
     right: 5%;
 }
 
 .promo__banner__a:hover {
     background-color: var(--secondary-color);
+}
+
+.formas-de-pago {
+    width: 100%;
+    max-width: 1022px;
+    margin: 80px auto 0 auto;
+    padding: 0 24px;
+}
+
+.formas-de-pago__contenedor {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.formas-de-pago__título {
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    margin-bottom: 12px;
+}
+
+.formas-de-pago__p {
+    color: var(--muted-text-color);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.cobros-tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.cobros-tarjetas__contenedor {
+    background-color: var(--header-color);
+    border-radius: 24px;
+    padding: 30px 30px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+.cobros-tarjetas__imagen {
+    flex: 1;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cobros-tarjetas__img {
+    width: 100%;
+    max-width: 380px;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.45s ease;
+}
+
+.cobros-tarjetas__contenedor:hover .cobros-tarjetas__img {
+    transform: scale(1.08);
+}
+
+.cobros-tarjetas__texto {
+    padding: 32px 24px;
+    max-width: 460px;
+}
+
+.cobros-tarjetas__título {
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 24px;
+}
+
+.cobros-tarjetas__p {
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 48px;
+}
+
+.cobros-tarjetas__a {
+    color: var(--hover-color);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 4px;
+    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+.cobros-tarjetas__a:hover {
+    color: var(--primary-color);
+    text-decoration-color: var(--primary-color);
+}
+
+.mayor-ícono {
+    width: 18px;
+    height: 18px;
+    transform: translateY(2.5px);
+    transition: transform 0.3s ease;
+}
+
+.cobros-tarjetas__a:hover .mayor-ícono {
+    transform: translate(3px, 1px);
 }

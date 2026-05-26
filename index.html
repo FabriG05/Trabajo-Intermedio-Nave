@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <header>
         <nav class="nav-sección">
@@ -116,27 +117,56 @@
             </div>
             <div class="promo__banner">
                 <h3 class="promo__banner__título">Historias que vuelan</h3>
-                <p class="promo__banner__p">Conocé a los comercios que eligen Nave todos los días <i class="fa-solid fa-heart" style="color: rgb(135, 107, 227);"></i></p>
+                <p class="promo__banner__p">Conocé a los comercios que eligen Nave todos los días <i
+                        class="fa-solid fa-heart" style="color: rgb(135, 107, 227);"></i></p>
                 <a href="#" class="promo__banner__a">Conocer más</a>
             </div>
         </section>
         <div class="separador__main-sections"></div>
         <section class="formas-de-pago">
-            <div class="formas-de-pago__content">
+            <div class="formas-de-pago__contenedor">
                 <h2 class="subtítulo">Encontrá el medio de cobro ideal</h2>
-                <p>Elegí las opciones que mejor se ajustan a tu negocio.</p>
+                <p class="formas-de-pago__p">Elegí las opciones que mejor se ajustan a tu negocio.</p>
             </div>
             <div class="cobros-tarjetas">
-                <img src="./assets/Images/img_qr.png" alt="Nave-QR">
-                <h3 class="cobros-tarjetas__título"></h3>
-                <p Class="cobros-tarjetas__p"></p>
-                <a href="#" class="cobros-tarjetas__a"></a>
-            </div>
-            <div class="cobros-tarjetas">
-                <img src="./assets/Images/img_terminal.png" alt="Naver-Posnet">
-                <h3 class="cobros-tarjetas__título"></h3>
-                <p Class="cobros-tarjetas__p"></p>
-                <a href="#" class="cobros-tarjetas__a"></a>
+                <div class="cobros-tarjetas__contenedor">
+                    <div class="cobros-tarjetas__texto">
+                        <h3 class="cobros-tarjetas__título">QR</h3>
+                        <p class="cobros-tarjetas__p">Simple e interoperable, cobrás con dinero en cuenta o tarjeta,
+                            desde cualquier billetera desde tu mostrador, web, factura o punto de venta.</p>
+                        <a href="#" class="cobros-tarjetas__a">
+                            Conocer más
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="mayor-ícono">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.11612 20.3839C7.62796 19.8957 7.62796 19.1043 8.11612 18.6161L14.2322 12.5L8.11612 6.38388C7.62796 5.89573 7.62796 5.10427 8.11612 4.61612C8.60427 4.12796 9.39573 4.12796 9.88388 4.61612L16.8839 11.6161C17.372 12.1043 17.372 12.8957 16.8839 13.3839L9.88388 20.3839C9.39573 20.872 8.60427 20.872 8.11612 20.3839Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="cobros-tarjetas__imagen">
+                        <img src="./assets/Images/img_qr.png" alt="Nave-QR" class="cobros-tarjetas__img">
+                    </div>
+                </div>
+                <div class="cobros-tarjetas__contenedor cobros-tarjetas__contenedor--invertida">
+                    <div class="cobros-tarjetas__imagen">
+                        <img src="./assets/Images/img_terminal.png" alt="Naver-Posnet" class="cobros-tarjetas__img">
+                    </div>
+                    <div class="cobros-tarjetas__texto">
+                        <h3 class="cobros-tarjetas__título">Terminal Nave Point</h3>
+                        <p Class="cobros-tarjetas__p">Aceptá pagos con tarjetas (contactless, con tecnología NFC) o QR y
+                            resolvé cada venta con autonomía, estés donde estés.</p>
+                        <a href="#" class="cobros-tarjetas__a">
+                            Conocer más
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="mayor-ícono">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.11612 20.3839C7.62796 19.8957 7.62796 19.1043 8.11612 18.6161L14.2322 12.5L8.11612 6.38388C7.62796 5.89573 7.62796 5.10427 8.11612 4.61612C8.60427 4.12796 9.39573 4.12796 9.88388 4.61612L16.8839 11.6161C17.372 12.1043 17.372 12.8957 16.8839 13.3839L9.88388 20.3839C9.39573 20.872 8.60427 20.872 8.11612 20.3839Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
