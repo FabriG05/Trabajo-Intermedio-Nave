@@ -10,6 +10,7 @@
     --header-hover-color: #e4d6ff;
     --hover-color: #370d73;
     --non-hover-color: #7b2ade;
+    --banner-color: #e1d1ff;
 }
 
 * {
@@ -48,6 +49,10 @@ a {
     align-items: center;
 }
 
+.header__mobile {
+    display: none;
+}
+
 .header__izquierda {
     display: flex;
     align-items: center;
@@ -71,7 +76,7 @@ a {
     margin: 0 4px;
     font-size: 15px;
     font-weight: 700;
-    color: #1a1a1a;
+    color: var(--text-color);
     cursor: pointer;
     padding: 6px 12px;
     display: inline-block;
@@ -117,7 +122,8 @@ a {
     gap: 12px;
 }
 
-.Espacio-Nave, .Entrar-a-Nave {
+.Espacio-Nave,
+.Entrar-a-Nave {
     font-size: 14px;
     font-weight: 700;
     border-radius: 999px;
@@ -299,7 +305,7 @@ a {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
-    background-color: var(--hover-color);
+    background-color: var(--banner-color);
     border-radius: 24px;
     padding: 40px;
     width: 100%;
@@ -308,17 +314,21 @@ a {
 }
 
 .promo__banner__título {
-    color: var(--header-color);
+    color: var(--hover-color);
     font-size: 32px;
     font-weight: 700;
     letter-spacing: -1.3px;
 }
 
 .promo__banner__p {
-    color: var(--header-color);
+    color: var(--hover-color);
     font-size: 18px;
     font-weight: 400;
     opacity: 0.9;
+}
+
+.promo__banner__icono {
+    color: rgb(135, 107, 227);
 }
 
 .promo__banner__a {
@@ -348,14 +358,6 @@ a {
 .formas-de-pago__contenedor {
     text-align: center;
     margin-bottom: 40px;
-}
-
-.formas-de-pago__título {
-    color: var(--text-color);
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 44px;
-    margin-bottom: 12px;
 }
 
 .formas-de-pago__p {
@@ -461,12 +463,9 @@ a {
 }
 
 .footer__content {
-    max-width: 1022px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1.4fr 1.3fr 1fr 1.2fr;
     gap: 64px;
-    position: relative;
 }
 
 .footer__logo {
@@ -511,4 +510,265 @@ a {
 .footer__a:hover {
     color: var(--primary-color);
     text-decoration-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+
+    .header__izquierda,
+    .header__derecha {
+        display: none;
+    }
+
+    .header__mobile {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 40px 1fr 40px;
+        align-items: center;
+    }
+
+    .header__menu {
+        justify-self: start;
+        border: none;
+        background: transparent;
+        color: var(--text-color);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .header__mobile-logo {
+        justify-self: center;
+        height: 28px;
+        width: auto;
+    }
+
+    .header__mobile-spacer {
+        width: 40px;
+        height: 1px;
+    }
+
+    .bienvenida__contenido {
+        width: calc(100% - 24px);
+        margin-top: 20px;
+        border-radius: 16px;
+        position: relative;
+    }
+
+    .bienvenida__foto {
+        height: 220px;
+        border-radius: 16px;
+        object-fit: cover;
+        object-position: 58% center;
+    }
+
+    .bienvenida__foto__contenido {
+        position: absolute;
+        left: 24px;
+        top: 30%;
+        max-width: 58%;
+    }
+
+    .bienvenida__foto__título {
+        font-size: 30px;
+        line-height: 31px;
+        letter-spacing: -0.8px;
+        margin: 0 0 14px;
+    }
+
+    .bienvenida__foto__texto {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0;
+    }
+
+    .subtítulo,
+    .subtítulo__cobros {
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: -0.6px;
+        margin-bottom: 20px;
+    }
+
+    .beneficios {
+        max-width: 100%;
+        margin-top: 40px;
+        padding: 0 18px;
+    }
+
+    .subtítulo {
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: -0.8px;
+        margin-bottom: 24px;
+    }
+
+    .beneficios__contenedor__tarjetas {
+        flex-direction: column;
+        gap: 22px;
+        margin-bottom: 32px;
+    }
+
+    .tarjetas {
+        max-width: none;
+        width: 100%;
+        min-height: auto;
+        padding: 28px 24px;
+        border-radius: 16px;
+        gap: 16px;
+    }
+
+    .tarjetas__ícono {
+        width: 62px;
+        height: 62px;
+        border-radius: 8px;
+        margin-bottom: 4px;
+    }
+
+    .tarjetas__ícono svg {
+        width: 34px;
+        height: 34px;
+    }
+
+    .tarjetas__título {
+        font-size: 21px;
+        line-height: 26px;
+        letter-spacing: -0.4px;
+    }
+
+    .tarjetas__p {
+        font-size: 17px;
+        line-height: 26px;
+        margin-top: 8px;
+    }
+
+    .promo__banner {
+        padding: 32px 24px;
+        border-radius: 28px;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .promo__banner__título {
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -0.5px;
+    }
+
+    .promo__banner__p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .promo__banner__a {
+        position: static;
+        transform: none;
+        width: 86%;
+        text-align: center;
+        padding: 14px 24px;
+        font-size: 17px;
+        margin-top: 8px;
+    }
+
+    .formas-de-pago {
+        max-width: 430px;
+        margin-top: 56px;
+        padding: 0 16px;
+    }
+
+    .subtítulo__cobros {
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: -0.6px;
+        margin-bottom: 12px;
+    }
+
+    .formas-de-pago__contenedor {
+        margin-bottom: 28px;
+    }
+
+    .formas-de-pago__p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .cobros-tarjetas {
+        gap: 24px;
+    }
+
+.cobros-tarjetas__contenedor {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cobros-tarjetas__imagen {
+    order: 1;
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.cobros-tarjetas__texto {
+    order: 2;
+    width: 100%;
+    padding: 0;
+}
+
+.cobros-tarjetas__img {
+    display: block;
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+    .cobros-tarjetas__título {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .cobros-tarjetas__p {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 28px;
+    }
+
+    .cobros-tarjetas__a {
+        font-size: 14px;
+    }
+
+    .footer {
+        margin-top: 64px;
+        padding: 32px 16px 32px;
+    }
+
+    .footer__inner {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .footer__logo {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .footer__content {
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        column-gap: 40px;
+        row-gap: 28px;
+    }
+
+    .footer__titulo {
+        font-size: 13px;
+        line-height: 17px;
+        margin-bottom: 12px;
+    }
+
+    .footer__a {
+        font-size: 11px;
+        line-height: 16px;
+    }
 }

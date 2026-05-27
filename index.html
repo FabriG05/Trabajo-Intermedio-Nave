@@ -12,10 +12,18 @@
 <body>
     <header>
         <nav class="nav-sección">
+            <div class="header__mobile">
+                <button class="header__menu" type="button" aria-label="Abrir menú">
+                    ☰
+                </button>
+                <img src="./assets/Images/LogoNave-Mobile.png" alt="Logo Nave" class="header__mobile-logo">
+                <span class="header__mobile-spacer"></span>
+            </div>
             <div class="header__izquierda">
                 <div class="n__logo">
-                    <img src="./assets/Images/Logo Nave.jpg" alt="Logo-Nave*">
-                    <a href="#"></a>
+                    <a href="#">
+                        <img src="./assets/Images/Logo Nave.jpg" alt="Logo-Nave*">
+                    </a>
                 </div>
                 <div class="dropdown">
                     <a href="#" class="nav__izquierda__a">Cobros</a>
@@ -86,7 +94,7 @@
                         </div>
                         <div class="tarjetas__texto">
                             <h3 class="tarjetas__título">Promociones que se adaptan a vos</h3>
-                            <p class="tarjetas__p">Activá combos, cuotas o beneficios cuándo y cómo vos quieras, sugún
+                            <p class="tarjetas__p">Activá combos, cuotas o beneficios cuándo y cómo vos quieras, según
                                 lo que tu negocio necesite.</p>
                         </div>
                     </div>
@@ -116,8 +124,10 @@
             </div>
             <div class="promo__banner">
                 <h3 class="promo__banner__título">Historias que vuelan</h3>
-                <p class="promo__banner__p">Conocé a los comercios que eligen Nave todos los días <i
-                        class="fa-solid fa-heart" style="color: rgb(135, 107, 227);"></i></p>
+                <p class="promo__banner__p">
+                    Conocé a los comercios que eligen Nave todos los días <i
+                        class="fa-solid fa-heart promo__banner__icono"></i>
+                </p>
                 <a href="#" class="promo__banner__a">Conocer más</a>
             </div>
         </section>
@@ -146,13 +156,13 @@
                         <img src="./assets/Images/img_qr.png" alt="Nave-QR" class="cobros-tarjetas__img">
                     </div>
                 </div>
-                <div class="cobros-tarjetas__contenedor cobros-tarjetas__contenedor--invertida">
+                <div class="cobros-tarjetas__contenedor">
                     <div class="cobros-tarjetas__imagen">
                         <img src="./assets/Images/img_terminal.png" alt="Naver-Posnet" class="cobros-tarjetas__img">
                     </div>
                     <div class="cobros-tarjetas__texto">
                         <h3 class="cobros-tarjetas__título">Terminal Nave Point</h3>
-                        <p Class="cobros-tarjetas__p">Aceptá pagos con tarjetas (contactless, con tecnología NFC) o QR y
+                        <p class="cobros-tarjetas__p">Aceptá pagos con tarjetas (contactless, con tecnología NFC) o QR y
                             resolvé cada venta con autonomía, estés donde estés.</p>
                         <a href="#" class="cobros-tarjetas__a">
                             Conocer más
