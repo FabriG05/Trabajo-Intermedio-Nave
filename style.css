@@ -784,8 +784,8 @@ a {
     }
 
     .bienvenida__foto__contenido {
-        left: 24px;
-        top: 44px;
+        left: 20px;
+        top: 65px;
         transform: none;
         max-width: 58%;
         text-align: left;
@@ -802,6 +802,10 @@ a {
         font-size: 13px;
         line-height: 18px;
         max-width: 95%;
+    }
+
+.bienvenida__foto__texto br {
+        display: none;
     }
 
     .beneficios,
