@@ -563,7 +563,7 @@ a {
     .bienvenida__foto__contenido {
         position: absolute;
         left: 24px;
-        top: 30%;
+        top: 25%;
         max-width: 58%;
     }
 
@@ -770,6 +770,30 @@ a {
     .footer__a {
         font-size: 11px;
         line-height: 16px;
+    }
+}
+
+@media (max-width: 520px) and (min-width: 391px) {
+    .bienvenida__foto__contenido {
+        left: 24px;
+        top: 20px;
+        max-width: 54%;
+    }
+
+    .bienvenida__foto__título {
+        font-size: 26px;
+        line-height: 31px;
+        margin-bottom: 16px;
+    }
+
+    .bienvenida__foto__texto {
+        font-size: 15px;
+        line-height: 20px;
+        max-width: 95%;
+    }
+
+    .bienvenida__foto__texto br {
+        display: none;
     }
 }
 
