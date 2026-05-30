@@ -448,7 +448,7 @@ a {
 }
 
 .cobros-tarjetas__a:hover .mayor-ícono {
-    transform: translate(3px, 1px);
+    transform: translate(3px, 3px);
 }
 
 .footer {
@@ -828,7 +828,7 @@ a {
         max-width: 95%;
     }
 
-.bienvenida__foto__texto br {
+    .bienvenida__foto__texto br {
         display: none;
     }
 
